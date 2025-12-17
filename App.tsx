@@ -260,7 +260,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-800 pb-20">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10">
+      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
              <div className="bg-blue-600 text-white p-1.5 rounded-lg">
@@ -269,7 +269,7 @@ export default function App() {
              <input 
                 value={tripData.title}
                 onChange={(e) => updateTripInfo('title', e.target.value)}
-                className="text-xl font-bold text-gray-900 bg-transparent outline-none focus:ring-2 ring-blue-100 rounded px-1"
+                className="text-xl font-bold text-gray-900 bg-transparent outline-none focus:ring-2 ring-blue-100 rounded px-1 max-w-[150px] sm:max-w-xs"
                 placeholder="여행 제목 입력..."
              />
           </div>
@@ -455,7 +455,7 @@ export default function App() {
 
       {/* AI Modal */}
       {showAiModal && (
-          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4" style={{ paddingTop: 'env(safe-area-inset-top)', paddingBottom: 'env(safe-area-inset-bottom)' }}>
               <div className="bg-white rounded-2xl w-full max-w-lg shadow-2xl p-6 relative overflow-hidden">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-600"></div>
                   

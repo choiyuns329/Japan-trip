@@ -1,4 +1,4 @@
-import { GoogleGenAI, Type } from "@google/genai";
+import { GoogleGenerativeAI} from "@google/generative-ai";
 import { TripData } from "../types";
 
 // Helper to sanitize JSON string if the model returns markdown code blocks
