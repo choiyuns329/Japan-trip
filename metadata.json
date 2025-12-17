@@ -1,0 +1,5 @@
+{
+  "name": "TripMate - AI 여행 플래너",
+  "description": "친구들과 함께 실시간으로 여행 계획을 세우는 협업 플랫폼입니다. 항공편, 숙소, 액티비티, 이동 수단을 관리하고 AI의 도움을 받아 일정을 생성해보세요.",
+  "requestFramePermissions": []
+}
